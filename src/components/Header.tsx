@@ -16,7 +16,7 @@ export function Header() {
   const [open, setOpen] = useState(false);
   return (
     <header className="sticky top-0 z-40 glass border-b border-border/50">
-      <div className="container mx-auto flex items-center justify-between px-4 py-3">
+      <div className="container mx-auto grid grid-cols-[auto_1fr_auto] items-center gap-4 px-4 py-3">
         <Link to="/" className="flex items-center gap-3">
           <img src={logo} alt="TRNDSKY" className="h-10 w-10 rounded-lg" />
           <div className="leading-tight">
@@ -25,7 +25,7 @@ export function Header() {
           </div>
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-1">
+        <nav className="hidden lg:flex items-center justify-center gap-1">
           {links.map((l) => (
             <Link
               key={l.to}
