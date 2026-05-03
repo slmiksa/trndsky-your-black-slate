@@ -66,7 +66,13 @@ export const software = [
   },
 ];
 
+import djScoob from "@/assets/partner-dj-scoob.png";
+
 export const partners = [
+  {
+    name: "DJ SCOOB",
+    logo: djScoob,
+  },
   {
     name: "شركة الوصل الوطنية لتحصيل ديون جهات التمويل",
     logo: "https://trndsky.com/lovable-uploads/aa977791-13b8-471b-92c8-d9ef4ef03f27.png",
