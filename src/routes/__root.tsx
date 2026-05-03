@@ -22,13 +22,15 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "TRNDSKY — تطوير التطبيقات ومنصات الويب" },
-      { name: "description", content: "TRNDSKY شركة سعودية متخصصة في تطوير التطبيقات ومنصات الويب وحلول الذكاء الاصطناعي." },
-      { property: "og:title", content: "TRNDSKY — تكنولوجيا المستقبل" },
+      { title: "شركة ترند اسكاي لتطوير وبرمجة المواقع والتطبيقات" },
+      { name: "description", content: "شركة ترند اسكاي TRNDSKY متخصصة في تطوير وبرمجة المواقع والتطبيقات وحلول الذكاء الاصطناعي." },
+      { property: "og:title", content: "شركة ترند اسكاي لتطوير وبرمجة المواقع والتطبيقات" },
       { property: "og:description", content: "حلول تقنية متكاملة، تطبيقات ومواقع احترافية، وذكاء اصطناعي." },
       { property: "og:type", content: "website" },
     ],
     links: [
+      { rel: "icon", type: "image/png", href: "/favicon.png" },
+      { rel: "apple-touch-icon", href: "/favicon.png" },
       { rel: "stylesheet", href: appCss },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
