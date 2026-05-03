@@ -1,7 +1,7 @@
 export const SITE = {
   name: "TRNDSKY",
   tagline: "تكنولوجيا المستقبل",
-  whatsapp: "966500000000", // ⚠️ غيّر الرقم برقمك الحقيقي
+  whatsapp: "966575594911",
   whatsappMessage: "مرحبًا TRNDSKY، أرغب في الاستفسار عن خدماتكم",
 };
 
