@@ -38,54 +38,56 @@
 :root {
   --radius: 0.875rem;
 
-  --background: oklch(0.08 0.01 240);
-  --foreground: oklch(0.98 0.005 240);
+  /* Soft warm-black background, easier on the eyes */
+  --background: oklch(0.16 0.008 260);
+  --foreground: oklch(0.96 0.005 240);
 
-  --card: oklch(0.12 0.012 240);
-  --card-foreground: oklch(0.98 0.005 240);
+  --card: oklch(0.2 0.01 260);
+  --card-foreground: oklch(0.96 0.005 240);
 
-  --popover: oklch(0.12 0.012 240);
-  --popover-foreground: oklch(0.98 0.005 240);
+  --popover: oklch(0.2 0.01 260);
+  --popover-foreground: oklch(0.96 0.005 240);
 
-  --primary: oklch(0.65 0.2 240);
-  --primary-foreground: oklch(0.08 0.01 240);
-  --primary-glow: oklch(0.75 0.22 230);
+  /* Refined teal/cyan accent — calmer than electric blue */
+  --primary: oklch(0.78 0.13 195);
+  --primary-foreground: oklch(0.16 0.01 260);
+  --primary-glow: oklch(0.82 0.12 200);
 
-  --secondary: oklch(0.18 0.015 240);
-  --secondary-foreground: oklch(0.98 0.005 240);
+  --secondary: oklch(0.24 0.01 260);
+  --secondary-foreground: oklch(0.96 0.005 240);
 
-  --muted: oklch(0.16 0.012 240);
-  --muted-foreground: oklch(0.68 0.02 240);
+  --muted: oklch(0.22 0.008 260);
+  --muted-foreground: oklch(0.72 0.015 250);
 
-  --accent: oklch(0.65 0.2 240);
-  --accent-foreground: oklch(0.08 0.01 240);
+  --accent: oklch(0.78 0.13 195);
+  --accent-foreground: oklch(0.16 0.01 260);
 
-  --destructive: oklch(0.6 0.24 25);
+  --destructive: oklch(0.65 0.2 25);
   --destructive-foreground: oklch(0.98 0.005 240);
 
-  --border: oklch(0.22 0.015 240 / 60%);
-  --input: oklch(0.18 0.015 240);
-  --ring: oklch(0.65 0.2 240);
+  --border: oklch(0.32 0.01 260 / 50%);
+  --input: oklch(0.24 0.01 260);
+  --ring: oklch(0.78 0.13 195);
 
-  --whatsapp: oklch(0.7 0.18 150);
+  --whatsapp: oklch(0.78 0.15 155);
 
-  --gradient-primary: linear-gradient(135deg, oklch(0.65 0.2 240), oklch(0.55 0.22 260));
-  --gradient-hero: radial-gradient(ellipse at top, oklch(0.2 0.08 240 / 60%), transparent 60%),
-                   radial-gradient(ellipse at bottom right, oklch(0.18 0.1 260 / 50%), transparent 60%),
-                   linear-gradient(180deg, oklch(0.06 0.01 240), oklch(0.08 0.012 240));
-  --gradient-card: linear-gradient(145deg, oklch(0.13 0.015 240), oklch(0.1 0.01 240));
-  --gradient-border: linear-gradient(135deg, oklch(0.65 0.2 240 / 50%), transparent);
+  --gradient-primary: linear-gradient(135deg, oklch(0.78 0.13 195), oklch(0.7 0.14 220));
+  --gradient-hero: radial-gradient(ellipse at top, oklch(0.28 0.05 220 / 50%), transparent 60%),
+                   radial-gradient(ellipse at bottom right, oklch(0.26 0.06 200 / 40%), transparent 60%),
+                   linear-gradient(180deg, oklch(0.14 0.008 260), oklch(0.16 0.008 260));
+  --gradient-card: linear-gradient(145deg, oklch(0.21 0.012 260), oklch(0.18 0.01 260));
+  --gradient-border: linear-gradient(135deg, oklch(0.78 0.13 195 / 40%), transparent);
 
-  --shadow-glow: 0 0 40px oklch(0.65 0.2 240 / 30%);
-  --shadow-elegant: 0 20px 60px -20px oklch(0 0 0 / 60%);
-  --shadow-card: 0 10px 40px -10px oklch(0 0 0 / 50%);
+  --shadow-glow: 0 0 40px oklch(0.78 0.13 195 / 22%);
+  --shadow-elegant: 0 20px 60px -20px oklch(0 0 0 / 50%);
+  --shadow-card: 0 10px 40px -10px oklch(0 0 0 / 40%);
 
   --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .dark {
-  --background: oklch(0.08 0.01 240);
-  --foreground: oklch(0.98 0.005 240);
+  --background: oklch(0.16 0.008 260);
+  --foreground: oklch(0.96 0.005 240);
 }
 
 @layer base {
