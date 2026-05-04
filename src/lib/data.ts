@@ -67,8 +67,13 @@ export const software = [
 ];
 
 import djScoob from "@/assets/partner-dj-scoob.png";
+import mujarad from "@/assets/partner-mujarad.png";
 
 export const partners = [
+  {
+    name: "نظام مُجرَّد",
+    logo: mujarad,
+  },
   {
     name: "DJ SCOOB",
     logo: djScoob,
