@@ -1,7 +1,27 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
+  vite: {
+    environments: {
+      client: {
+        build: {
+          outDir: "dist",
+        },
+      },
+      ssr: {
+        build: {
+          outDir: "dist/server",
+        },
+      },
+    },
+  },
   tanstackStart: {
+    spa: {
+      enabled: true,
+      prerender: {
+        outputPath: "/",
+      },
+    },
     pages: [
       { path: "/" },
       { path: "/about" },
