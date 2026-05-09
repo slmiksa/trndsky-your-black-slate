@@ -68,6 +68,7 @@ export const software = [
 
 import djScoob from "@/assets/partner-dj-scoob.png";
 import mujarad from "@/assets/partner-mujarad.png";
+import mani from "@/assets/partner-mani.jpeg";
 
 export const partners = [
   {
@@ -89,6 +90,10 @@ export const partners = [
   {
     name: "FLY BOY",
     logo: "https://qsdwcplmgkuyweqynyyh.supabase.co/storage/v1/object/public/public/partner-logos/partner-logo-1746686394854-p988svw4w6o.png",
+  },
+  {
+    name: "شركة ماني لتحصيل ديون جهات التمويل",
+    logo: mani,
   },
   {
     name: "تطبيق لمحة للتسويق الإلكتروني",
