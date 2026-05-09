@@ -69,6 +69,7 @@ export const software = [
 import djScoob from "@/assets/partner-dj-scoob.png";
 import mujarad from "@/assets/partner-mujarad.png";
 import mani from "@/assets/partner-mani.jpeg";
+import alwasl from "@/assets/partner-alwasl.png";
 
 export const partners = [
   {
@@ -81,7 +82,7 @@ export const partners = [
   },
   {
     name: "شركة الوصل الوطنية لتحصيل ديون جهات التمويل",
-    logo: "https://trndsky.com/lovable-uploads/aa977791-13b8-471b-92c8-d9ef4ef03f27.png",
+    logo: alwasl,
   },
   {
     name: "روفن استور",
