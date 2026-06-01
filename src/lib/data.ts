@@ -81,10 +81,6 @@ export const partners = [
     logo: djScoob,
   },
   {
-    name: "شركة الوصل الوطنية لتحصيل ديون جهات التمويل",
-    logo: alwasl,
-  },
-  {
     name: "روفن استور",
     logo: "https://qsdwcplmgkuyweqynyyh.supabase.co/storage/v1/object/public/public/uploads/1746424937819-bt5qqkg9a2.jfif",
   },
