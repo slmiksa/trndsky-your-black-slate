@@ -9,7 +9,7 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "TRNDSKY — حلول تقنية متكاملة" },
+      { title: "لمحة ديف — حلول تقنية متكاملة" },
       { name: "description", content: "نقدم خدمات برمجية شاملة من التصميم إلى التطوير والصيانة. تطبيقات، منصات ويب، وحلول ذكاء اصطناعي." },
     ],
   }),

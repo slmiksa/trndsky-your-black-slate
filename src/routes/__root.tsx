@@ -22,9 +22,9 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "شركة ترند اسكاي لتطوير وبرمجة المواقع والتطبيقات" },
-      { name: "description", content: "شركة ترند اسكاي TRNDSKY متخصصة في تطوير وبرمجة المواقع والتطبيقات وحلول الذكاء الاصطناعي." },
-      { property: "og:title", content: "شركة ترند اسكاي لتطوير وبرمجة المواقع والتطبيقات" },
+      { title: "لمحة ديف للحلول التقنية" },
+      { name: "description", content: "لمحة ديف — Lamha Dev، حلول تقنية متكاملة من تصميم وتطوير المواقع والتطبيقات وخدمات الذكاء الاصطناعي." },
+      { property: "og:title", content: "لمحة ديف للحلول التقنية" },
       { property: "og:description", content: "حلول تقنية متكاملة، تطبيقات ومواقع احترافية، وذكاء اصطناعي." },
       { property: "og:type", content: "website" },
     ],
