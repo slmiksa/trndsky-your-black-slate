@@ -13,6 +13,7 @@ import { Route as SoftwareRouteImport } from './routes/software'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as PartnersRouteImport } from './routes/partners'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as BankAccountsRouteImport } from './routes/bank-accounts'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
@@ -36,6 +37,11 @@ const ContactRoute = ContactRouteImport.update({
   path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BankAccountsRoute = BankAccountsRouteImport.update({
+  id: '/bank-accounts',
+  path: '/bank-accounts',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
@@ -50,6 +56,7 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/bank-accounts': typeof BankAccountsRoute
   '/contact': typeof ContactRoute
   '/partners': typeof PartnersRoute
   '/services': typeof ServicesRoute
@@ -58,6 +65,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/bank-accounts': typeof BankAccountsRoute
   '/contact': typeof ContactRoute
   '/partners': typeof PartnersRoute
   '/services': typeof ServicesRoute
@@ -67,6 +75,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/bank-accounts': typeof BankAccountsRoute
   '/contact': typeof ContactRoute
   '/partners': typeof PartnersRoute
   '/services': typeof ServicesRoute
@@ -77,16 +86,25 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/about'
+    | '/bank-accounts'
     | '/contact'
     | '/partners'
     | '/services'
     | '/software'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/contact' | '/partners' | '/services' | '/software'
+  to:
+    | '/'
+    | '/about'
+    | '/bank-accounts'
+    | '/contact'
+    | '/partners'
+    | '/services'
+    | '/software'
   id:
     | '__root__'
     | '/'
     | '/about'
+    | '/bank-accounts'
     | '/contact'
     | '/partners'
     | '/services'
@@ -96,6 +114,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  BankAccountsRoute: typeof BankAccountsRoute
   ContactRoute: typeof ContactRoute
   PartnersRoute: typeof PartnersRoute
   ServicesRoute: typeof ServicesRoute
@@ -132,6 +151,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/bank-accounts': {
+      id: '/bank-accounts'
+      path: '/bank-accounts'
+      fullPath: '/bank-accounts'
+      preLoaderRoute: typeof BankAccountsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/about': {
       id: '/about'
       path: '/about'
@@ -152,6 +178,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  BankAccountsRoute: BankAccountsRoute,
   ContactRoute: ContactRoute,
   PartnersRoute: PartnersRoute,
   ServicesRoute: ServicesRoute,

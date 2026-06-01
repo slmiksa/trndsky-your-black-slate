@@ -8,6 +8,7 @@ const links = [
   { to: "/services", label: "خدماتنا" },
   { to: "/software", label: "البرمجيات الجاهزة" },
   { to: "/partners", label: "شركاء النجاح" },
+  { to: "/bank-accounts", label: "الحسابات البنكية" },
   { to: "/about", label: "من نحن" },
   { to: "/contact", label: "تواصل معنا" },
 ] as const;

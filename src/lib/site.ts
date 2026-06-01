@@ -1,8 +1,9 @@
 export const SITE = {
-  name: "TRNDSKY",
+  name: "Lamha Dev",
   tagline: "تكنولوجيا المستقبل",
-  whatsapp: "966575594911",
-  whatsappMessage: "مرحبًا TRNDSKY، أرغب في الاستفسار عن خدماتكم",
+  whatsapp: "966590844649",
+  whatsappMessage: "مرحبًا لمحة ديف، أرغب في الاستفسار عن خدماتكم",
+  cr: "7054222174",
 };
 
 export const waLink = (msg?: string) =>

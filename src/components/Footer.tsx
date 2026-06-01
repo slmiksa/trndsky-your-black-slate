@@ -25,6 +25,7 @@ export function Footer() {
             <li><Link to="/services" className="hover:text-primary">خدماتنا</Link></li>
             <li><Link to="/software" className="hover:text-primary">البرمجيات الجاهزة</Link></li>
             <li><Link to="/partners" className="hover:text-primary">شركاء النجاح</Link></li>
+            <li><Link to="/bank-accounts" className="hover:text-primary">الحسابات البنكية</Link></li>
             <li><Link to="/about" className="hover:text-primary">من نحن</Link></li>
           </ul>
         </div>
@@ -44,8 +45,9 @@ export function Footer() {
           </a>
         </div>
       </div>
-      <div className="border-t border-border/50 py-5 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} TRNDSKY — جميع الحقوق محفوظة
+      <div className="border-t border-border/50 py-5 text-center text-xs text-muted-foreground space-y-1">
+        <div>رقم السجل التجاري: {SITE.cr}</div>
+        <div>© {new Date().getFullYear()} لمحة ديف — جميع الحقوق محفوظة</div>
       </div>
     </footer>
   );
