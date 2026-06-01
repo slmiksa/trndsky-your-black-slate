@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import logo from "@/assets/trndsky-logo.png";
+import logo from "@/assets/lamha-dev-logo.png";
 
 const links = [
   { to: "/", label: "الرئيسية" },
@@ -18,9 +18,9 @@ export function Header() {
     <header className="sticky top-0 z-40 glass border-b border-border/50">
       <div className="container mx-auto grid grid-cols-[auto_1fr_auto] items-center gap-4 px-4 py-3">
         <Link to="/" className="flex items-center gap-3">
-          <img src={logo} alt="TRNDSKY" className="h-10 w-10 rounded-lg" />
+          <img src={logo} alt="Lamha Dev" className="h-10 w-10 rounded-lg" />
           <div className="leading-tight">
-            <div className="font-display font-bold text-lg tracking-wider">TRNDSKY</div>
+            <div className="font-display font-bold text-lg tracking-wider">Lamha Dev</div>
             <div className="text-[10px] text-muted-foreground">تكنولوجيا المستقبل</div>
           </div>
         </Link>
